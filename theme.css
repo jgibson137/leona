@@ -8,6 +8,35 @@ body {
 	--toggle-radius: 0px;
 	--toggle-thumb-radius: 0px;
 	--slider-thumb-radius: 0px;
+
+	--background-primary: #000000;
+	/*ribbon*/
+	--ribbon-background: #edcf5e;
+	--ribbon-background-collapsed: #edcf5e;
+	--icon-color: black;
+	--code-radius: var(--radius-xl);
+	--tab-radius: var(--radius-xl);
+	--tab-radius-active: var(--radius-xl);
+	/* --text-normal: #edcf5e; */
+	--text-muted: lightblue;
+	--text-selection: #edcf5e;
+	/* --font-interface-theme: sans-serif; */
+	/* --divider-color: transparent; */
+	
+	--file-header-justify: left;
+	/* --file-	 */
+	
+	/* tab text color variables:
+		--tab-text-color: when obsidian is not the active window, this applies to all non-current tabs 
+			--tab-text-color-focused: same as above but when obsidian is the in-focus window
+
+		--tab-text-color-active: applies to tab of file that you are actively editing
+			--tab-text-color-focused-active-current: same as above but when obsidian is the in-focus window
+			--tab-text-color-focused-active: applies color to the X (close) icon of the tab actively editing, even when not in focus
+	*/
+	/*--tab-text-color: #FC5A21;*/
+
+	--
 }
 
 .workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
