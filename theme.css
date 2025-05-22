@@ -13,7 +13,10 @@ body {
 	/*ribbon*/
 	--ribbon-background: #edcf5e;
 	--ribbon-background-collapsed: #edcf5e;
-	--icon-color: black;
+	--nav-collapse-icon-color: green;
+	--nav-collapse-icon-color-collapsed: white;
+	/* --icon-color: var(--color-base-08); */
+	/* --icon-color-focused: white; */
 	--code-radius: var(--radius-xl);
 	--tab-radius: var(--radius-xl);
 	--tab-radius-active: var(--radius-xl);
@@ -22,8 +25,10 @@ body {
 	--text-selection: #edcf5e;
 	/* --font-interface-theme: sans-serif; */
 	/* --divider-color: transparent; */
-	
+	--code-background: #edcf5e;
+	--code-normal: #000000;
 	--file-header-justify: left;
+	--font-monospace-theme: "Times New Roman";
 	/* --file-	 */
 	
 	/* tab text color variables:
@@ -35,8 +40,16 @@ body {
 			--tab-text-color-focused-active: applies color to the X (close) icon of the tab actively editing, even when not in focus
 	*/
 	/*--tab-text-color: #FC5A21;*/
+}
 
-	--
+.HyperMD-codeblock{
+	writing-mode: horizontal-tb;
+}
+
+.markdown-rendered pre{
+	writing-mode: vertical-lr;
+	text-orientation: upright;
+	text-align:center;
 }
 
 .workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
