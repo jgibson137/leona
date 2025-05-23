@@ -25,7 +25,7 @@ body {
 	--accent-l:63%;
 
 	/*ribbon*/
-	--ribbon-background:  rgba(51, 18, 9, 1);
+	--ribbon-background:  rgb(82, 29, 15);
 	--ribbon-background-collapsed: rgba(51, 18, 9, 1);
 	--icon-color: rgb(248, 162, 138);
 	
@@ -37,6 +37,9 @@ body {
 	--file-header-justify: left;
 
 	--font-monospace-theme: "Courier New";
+
+	--vault-profile-color: var(--tab-text-color-focused-active-current);
+	--vault-profile-color-hover: orange;
 
 	--divider-color: rgb(241, 184, 80);
 	
@@ -65,6 +68,7 @@ body {
 
 .checkbox-container::after{
 	border-radius: 10px;
+	
 }
 
 .HyperMD-codeblock{
@@ -72,7 +76,7 @@ body {
 	font-family: 'Courier New', Courier, monospace;
 }
 
-.workspace-tab-header.tappable.is-active{
+.workspace-tab-header.tappable{
 	border-radius: 10px 10px 0px 0px;
 	/* border: 1px aqua solid; */
 }
@@ -86,7 +90,6 @@ body {
 
 .mod-settings{
 	border-radius: 3% 3% 3% 0%;
-	/* border-radius: 7% 3% 3% 7%; */
 }
 
 .workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
