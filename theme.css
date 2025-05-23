@@ -9,27 +9,42 @@ body {
 	--toggle-thumb-radius: 0px;
 	--slider-thumb-radius: 0px;
 
-	--background-primary: #000000;
+	--background-primary: black;
+	/* --background-primary-alt: ; */
+	--background-secondary: black;
+	--background-secondary-alt: yellow;
+
+	
+	/* --titlebar-background: rgb(60, 8, 29); */
+	--titlebar-background: rgb(159, 73, 47);
+	/* --titlebar-background-focused: rgba(51, 18, 9, 1); */
+	--titlebar-background-focused: rgb(154, 40, 5);
+
+	--accent-h:39;
+	--accent-s:85%;
+	--accent-l:63%;
+
 	/*ribbon*/
-	--ribbon-background: #edcf5e;
-	--ribbon-background-collapsed: #edcf5e;
-	--nav-collapse-icon-color: green;
-	--nav-collapse-icon-color-collapsed: white;
-	/* --icon-color: var(--color-base-08); */
-	/* --icon-color-focused: white; */
+	--ribbon-background:  rgba(51, 18, 9, 1);
+	--ribbon-background-collapsed: rgba(51, 18, 9, 1);
+	--icon-color: rgb(248, 162, 138);
+	
+
+	--nav-collapse-icon-color: rgb(241, 184, 80);
 	--code-radius: var(--radius-xl);
-	--tab-radius: var(--radius-xl);
-	--tab-radius-active: var(--radius-xl);
-	/* --text-normal: #edcf5e; */
-	--text-muted: lightblue;
-	--text-selection: #edcf5e;
-	/* --font-interface-theme: sans-serif; */
-	/* --divider-color: transparent; */
-	--code-background: #edcf5e;
-	--code-normal: #000000;
+	--code-background: rgba(241, 184, 80, .1);
+	--code-normal: #ffffff;
 	--file-header-justify: left;
-	--font-monospace-theme: "Times New Roman";
-	/* --file-	 */
+
+	--font-monospace-theme: "Courier New";
+
+	--divider-color: rgb(241, 184, 80);
+	
+	--metadata-border-radius: 10px; 
+
+	/* --button-radius: 10px;
+	--checkbox-radius: 10px;
+	--modal-radius: 10px; */
 	
 	/* tab text color variables:
 		--tab-text-color: when obsidian is not the active window, this applies to all non-current tabs 
@@ -39,17 +54,39 @@ body {
 			--tab-text-color-focused-active-current: same as above but when obsidian is the in-focus window
 			--tab-text-color-focused-active: applies color to the X (close) icon of the tab actively editing, even when not in focus
 	*/
-	/*--tab-text-color: #FC5A21;*/
+	--tab-text-color: rgb(206, 206, 206);
+	--tab-text-color-focused-active-current: rgb(241, 184, 80);
+	/* --tab-radius-active: ; */
+}
+
+.checkbox-container{
+	border-radius: 10px;
+}
+
+.checkbox-container::after{
+	border-radius: 10px;
 }
 
 .HyperMD-codeblock{
 	writing-mode: horizontal-tb;
+	font-family: 'Courier New', Courier, monospace;
 }
 
-.markdown-rendered pre{
-	writing-mode: vertical-lr;
-	text-orientation: upright;
+.workspace-tab-header.tappable.is-active{
+	border-radius: 10px 10px 0px 0px;
+	/* border: 1px aqua solid; */
+}
+
+
+/* .markdown-rendered pre{
+	writing-mode: vertical-lr; */
+	/* text-orientation: upright;
 	text-align:center;
+} */
+
+.mod-settings{
+	border-radius: 3% 3% 3% 0%;
+	/* border-radius: 7% 3% 3% 7%; */
 }
 
 .workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
